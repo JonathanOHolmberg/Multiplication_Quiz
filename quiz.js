@@ -67,8 +67,9 @@ randomQuestion = quizData[randomIndex];
     location.reload()
   } else if (randomQuestion === undefined) {
     alert ("Onneksi olkoon, vastasit kaikkiin kysymyksiin!")
-    victoryGIF.style.display = 'revert'
+    questionDisplay.textContent = 'Hienoa!'
     navButton.textContent = 'Alkuun'
+    questionDisplay.style.animation = 'glow 1s ease-in-out infinite alternate';
   } else {
     optionA.style.display ='revert'
     optionB.style.display ='revert'
