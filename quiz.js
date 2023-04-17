@@ -39,9 +39,9 @@ var quizData = [
   },
   { question: "Laske " + randVar5 + " x " + randVar4,
     answers: [
-      { option: "A", text: (randVar5 * randVar2).toString(), correct: "false" },
+      { option: "A", text: (randVar5 * randVar4 +3).toString(), correct: "false" },
       { option: "B", text: (randVar5 * randVar4 +1).toString(), correct: "false" },
-      { option: "C", text: (randVar3 * randVar5 -2).toString(), correct: "false" },
+      { option: "C", text: (randVar4 * randVar5 -2).toString(), correct: "false" },
       { option: "D", text: (randVar5 * randVar4).toString(), correct: "true" }
     ]
   },
@@ -74,10 +74,10 @@ randomQuestion = quizData[randomIndex];
     optionB.style.display ='revert'
     optionC.style.display ='revert'
     optionD.style.display ='revert'
-    optionA.style.background = '#ffffff'
-    optionB.style.background = '#ffffff'
-    optionC.style.background = '#ffffff'
-    optionD.style.background = '#ffffff'
+    optionA.style.background = '#36505F'
+    optionB.style.background = '#36505F'
+    optionC.style.background = '#36505F'
+    optionD.style.background = '#36505F'
     navButton.style.display = 'none'
 
     questionDisplay.textContent = randomQuestion.question;
