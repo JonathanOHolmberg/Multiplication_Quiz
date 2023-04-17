@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kertolasku-visa</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="body-wrapper">
+    <h1 id="questionDisplay">Kertolasku-visa</h1>
+    <div class="container">
+        <button class="ans" id="ans_A" onclick="checkQuestionAnswerA()" style="display:none;">Answer A</button>
+        <button class="ans" id="ans_B" onclick="checkQuestionAnswerB()" style="display:none;">Answer B</button>
+        <button class="ans" id="ans_C" onclick="checkQuestionAnswerC()" style="display:none;">Answer C</button>
+        <button class="ans" id="ans_D" onclick="checkQuestionAnswerD()" style="display:none;">Answer D</button>
+    </div>
+  <button id ="navButton" onclick="generateQuestion()">Aloita</button>
+  <img id = "Victory" src="https://media.tenor.com/URUR582evd0AAAAM/victory-winning.gif" alt="Victory" style="width:220px;height:124px;display:none">
+</div>
+<script src="quiz.js"></script>
+</body>
+</html>
