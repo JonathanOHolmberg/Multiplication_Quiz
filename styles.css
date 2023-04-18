@@ -55,12 +55,3 @@ button#navButton {
     font-size: 3em;
     font-weight: 700;
 }
-
-@-webkit-keyframes glow {
-from {
-  text-shadow: 0 0 10px #ffffff22, 0 0 20px #ffffff22, 0 0 30px #ffffff66, 0 0 40px #ffffff66, 0 0 50px #ffffff88, 0 0 60px #ffffff88, 0 0 70px #ffffffCC;
-}
-to {
-  text-shadow: 0 0 20px #ffffff66, 0 0 30px #ffffff66, 0 0 40px #ffffff66, 0 0 50px #ffffff88, 0 0 60px #ffffff88, 0 0 70px #ffffffCC, 0 0 80px #ffffffCC;
-}
-}

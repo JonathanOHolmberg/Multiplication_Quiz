@@ -50,7 +50,6 @@ var quizData = [
 
 const questionDisplay = document.getElementById('questionDisplay');
 const navButton = document.getElementById('navButton');
-const victoryGIF = document.getElementById('Victory');
 const optionA = document.getElementById('ans_A');
 const optionB = document.getElementById('ans_B');
 const optionC = document.getElementById('ans_C');
@@ -69,7 +68,6 @@ randomQuestion = quizData[randomIndex];
     alert ("Onneksi olkoon, vastasit kaikkiin kysymyksiin!")
     questionDisplay.textContent = 'Hienoa!'
     navButton.textContent = 'Alkuun'
-    questionDisplay.style.animation = 'glow 1s ease-in-out infinite alternate';
   } else {
     optionA.style.display ='revert'
     optionB.style.display ='revert'
