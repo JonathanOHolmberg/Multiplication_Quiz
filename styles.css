@@ -1,14 +1,55 @@
 body {
-    background: #B2D9EF;
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+    background: rgb(39, 38, 38) !important;
     color: #fff;
     min-height: 500px;
 }
 
-h1#questionDisplay {
-    margin-bottom: 40px;
-    font-size: 5em;
-    font-family: "Nunito", sans-serif;
-    font-weight: 900;
+#footer {
+    position: fixed;
+    padding: 10px 10px 0px 10px;
+    bottom: 0;
+    width: 100%;
+    height: 3%;
+    font-size:6px;
+    background-color: rgb(39, 38, 38);
+    color: white;
+    text-align: center;
+}
+
+h1 {
+    color: rgb(212, 210, 210);
+}
+
+.card-title {
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+    padding-top: 3px;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+}
+
+.col-5.my-5 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 3em;
+    color: #fff;
+}
+
+.navbar-brand {
+    font-weight:900;
+}
+
+nav.navbar.navbar-expand-lg.bg-body-tertiary {
+    width: 100%;
 }
 
 div#body-wrapper {
@@ -22,12 +63,59 @@ div#body-wrapper {
     text-transform: uppercase;
 }
 
+div#questionText {
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+}
+
+div#finalText {
+    margin-bottom: 20px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+}
+
+
+
+p#correctQuestion {
+    margin-left: 4em;
+    margin-right: 1em;
+}
+p#progressQuestion {
+    margin-left: 4em;
+    margin-right: 1em;
+}
+
+p#totalQuestion {
+    margin-right: 4em;
+    margin-left: 1em;
+}
+
+
+
+h1#questionDisplay {
+    margin-bottom: 20px;
+    font-size: 5em;
+    font-family: "Nunito", sans-serif;
+    font-weight: 800;
+}
+
+
+
 .container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 15px;
     width: 40%;
+    margin-bottom: 10px;
 }
+
+
 
 button {
     width: 100%;
@@ -37,21 +125,30 @@ button {
     background: #36505F;
     font-family: "Nunito", sans-serif;
     font-weight: 900;
-    text-transform: uppercase;
     border: 0px solid #36505F;
     color: #fff;
+    border-radius: 6px !important; 
 }
 
-button:hover {
+button:not(:disabled):hover {
     opacity: 0.8;
     transition: all 0.3s;
 }
 
 button#navButton {
-    margin: 40px;
-    width: 40%;
     letter-spacing: 10px;
     background: #83D8D2;
-    font-size: 3em;
+    font-size: 2em;
     font-weight: 700;
+    text-transform: uppercase;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+main.container {
+    display: flex;
+    justify-content: center;
+    color: #fff;
 }
